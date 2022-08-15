@@ -24,4 +24,9 @@ webPage with personal introducion
    &nbsp;
     
 ## Link para o site:
-# [apk](https://ronaldofagundes.github.io/webPortfolio/)
+# [site](https://ronaldofagundes.github.io/webPortfolio/)
+
+ &nbsp;
+  
+  ## released the first version
+  ### in developmenting
