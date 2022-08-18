@@ -3,6 +3,7 @@
   let projectBack = document.querySelector(".projects-back");
   let projectMobilie = document.querySelector(".projects-mobilie");
 
+  let btn_top = document.querySelector(".to-top");
 
    showProject =(project)=>{
 
@@ -59,4 +60,23 @@
        
    
 
+
+   window.addEventListener("scroll",scrollFunction);
       
+    function scrollFunction () {
+
+        if(window.pageYOffset > 300){
+
+            btn_top.style.display="flex";
+        }else{
+            btn_top.style.display="none"; 
+        }
+        
+   }
+
+
+   btn_top.addEventListener("click",backToTop);
+
+    function backToTop(){
+         window.scrollTo(0,0);
+    }

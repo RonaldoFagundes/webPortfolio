@@ -45,6 +45,9 @@ body .bi-filetype-pdf:hover {
 body .bi-globe:hover {
   color: #14ffb1;
 }
+body .bi-arrow-up-square-fill:hover {
+  color: #14ffb1;
+}
 body main {
   display: block;
 }
@@ -118,6 +121,34 @@ body main .header-social-media ul {
 }
 body main .header-social-media ul li {
   margin: 0 1rem;
+}
+body main .to-top {
+  background-color: white;
+  width: 40px;
+  height: 40px;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  z-index: 2000;
+  position: fixed;
+  bottom: 20px;
+  margin-left: 94%;
+  cursor: pointer;
+  border: 3px solid #333;
+  border-radius: 50%;
+  transition-duration: 0.2s;
+  transition-timing-function: ease-in-out;
+  transition-property: background-color, color;
+}
+body main .to-top:hover, body main .to-top:focus {
+  background-color: blue;
+}
+@media screen and (min-width: 300px) and (max-width: 1000px) {
+  body main .to-top {
+    background-color: red;
+    margin-left: 82%;
+    bottom: 180px;
+  }
 }
 body main .about {
   width: auto;
