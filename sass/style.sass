@@ -7,6 +7,10 @@
 *
     @include mixins.reset
 
+html
+  scroll-behavior: smooth
+
+
 
 body
         @include mixins.body-dark-degrade
@@ -40,9 +44,16 @@ body
         .bi-filetype-pdf:hover
          color: variables.$link-pdf-color
         .bi-globe:hover
-         color: variables.$link-globe-color 
+         color: variables.$link-globe-color
+
+
+        .bi-arrow-up-square-fill
+         color: variables.$link-top-color
+
         .bi-arrow-up-square-fill:hover
-         color: variables.$link-globe-color 
+         color: variables.$link-top-color-hover 
+
+
         main
           display: block
           
@@ -109,7 +120,7 @@ body
                     
           .to-top
 
-            background-color: white
+            background-color: rgba(0, 0,0 ,0.5 )
             width: 40px
             height: 40px
             display: none
@@ -126,18 +137,52 @@ body
             transition-timing-function: ease-in-out
             transition-property: background-color,color 
 
-            &:hover, &:focus
-              background-color: blue
+            
+             
+
+            
               
 
             @media screen and (min-width: variables.$mq_mobilie) and (max-width: variables.$mq_desktop)
-              background-color: red
               margin-left: 82%
               bottom: 180px
                
             
+         
 
-            
+
+          .topEntrance
+            animation-duration: 0.5s
+            animation-fill-mode: both
+            animation-name: topEntrance
+
+            @keyframes topEntrance
+              from
+                opacity:0
+                //transform: scale3d(0.3,0.3,0.3)
+                transform: translate3d(0,100%,0)
+              to
+                opacity:1
+                transform: translate3d(0,0,0)      
+                           
+  
+          .topExit
+            animation-duration: 0.25s
+            animation-fill-mode: both
+            animation-name: topExit
+
+            @keyframes topExit
+              from
+                opacity:1
+              to
+                opacity:0
+                //transform: scale3d(0.3,0.3,0.3)
+                transform: translate3d(0,100% ,0)
+
+              
+                
+              
+                
 
           .about
               @include mixins.container-about

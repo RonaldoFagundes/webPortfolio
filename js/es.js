@@ -8,7 +8,7 @@
    showProject =(project)=>{
 
        if(project == "front"){
-         alert("frontEnd");
+         alert("projetos frontEnd");
          projectFront.classList.add("projects-front-show");
          projectBack.classList.remove("projects-back-show");
          projectMobilie.classList.remove("projects-mobilie-show");
@@ -17,7 +17,7 @@
          btn_mobilie.classList.remove("active-btn");
         }
        else if (project == "back"){
-        alert("backend");
+        alert("projetos backend");
         projectBack.classList.add("projects-back-show");
         projectFront.classList.remove("projects-front-show");
         projectMobilie.classList.remove("projects-mobilie-show");
@@ -26,7 +26,7 @@
         btn_mobilie.classList.remove("active-btn");
        }
        else if (project == "mobilie"){
-        alert("mobilie"); 
+        alert("projetos mobilie"); 
         projectMobilie.classList.add("projects-mobilie-show");
         projectFront.classList.remove("projects-front-show");
         projectBack.classList.remove("projects-back-show");
@@ -67,12 +67,30 @@
 
         if(window.pageYOffset > 300){
 
-            btn_top.style.display="flex";
+           if(!btn_top.classList.contains("topEntrance")){
+                             
+               btn_top.classList.remove("topExit"); 
+               btn_top.classList.add("topEntrance");  
+               btn_top.style.display="flex";
+               
+                }
+
+           
         }else{
-            btn_top.style.display="none"; 
+
+         if(btn_top.classList.contains("topEntrance")){
+            btn_top.classList.remove("topEntrance"); 
+            btn_top.classList.add("topExit"); 
+            setTimeout(()=>{
+               btn_top.style.display="none";
+            },250);
+             
+
+          }
+
         }
         
-   }
+     }
 
 
    btn_top.addEventListener("click",backToTop);

@@ -3,6 +3,10 @@
   margin: 0;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background-color: rgba(0, 2, 9, 0.7);
   background-image: linear-gradient(to top, transparent, rgba(19, 6, 18, 0.8));
@@ -45,8 +49,11 @@ body .bi-filetype-pdf:hover {
 body .bi-globe:hover {
   color: #14ffb1;
 }
+body .bi-arrow-up-square-fill {
+  color: rgba(20, 208, 255, 0.9529411765);
+}
 body .bi-arrow-up-square-fill:hover {
-  color: #14ffb1;
+  color: #91ff14;
 }
 body main {
   display: block;
@@ -123,7 +130,7 @@ body main .header-social-media ul li {
   margin: 0 1rem;
 }
 body main .to-top {
-  background-color: white;
+  background-color: rgba(0, 0, 0, 0.5);
   width: 40px;
   height: 40px;
   display: none;
@@ -140,14 +147,39 @@ body main .to-top {
   transition-timing-function: ease-in-out;
   transition-property: background-color, color;
 }
-body main .to-top:hover, body main .to-top:focus {
-  background-color: blue;
-}
 @media screen and (min-width: 300px) and (max-width: 1000px) {
   body main .to-top {
-    background-color: red;
     margin-left: 82%;
     bottom: 180px;
+  }
+}
+body main .topEntrance {
+  animation-duration: 0.5s;
+  animation-fill-mode: both;
+  animation-name: topEntrance;
+}
+@keyframes topEntrance {
+  from {
+    opacity: 0;
+    transform: translate3d(0, 100%, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+body main .topExit {
+  animation-duration: 0.25s;
+  animation-fill-mode: both;
+  animation-name: topExit;
+}
+@keyframes topExit {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+    transform: translate3d(0, 100%, 0);
   }
 }
 body main .about {
