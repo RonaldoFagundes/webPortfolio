@@ -1,3 +1,4 @@
+@import url(http://fonts.googleapis.com/css?family=Roboto+Slab|Open+Sans:400italic,700italic,400,700);
 * {
   padding: 0;
   margin: 0;
@@ -21,7 +22,7 @@ body ul {
 }
 body h1 {
   color: #1df0aa;
-  font-family: "Lobster", cursive;
+  font-family: "Roboto Slab", serif;
   font-size: 1.8rem;
   margin-bottom: 1.7rem;
 }
@@ -738,7 +739,7 @@ body main .projects #front-slide-three:hover {
   }
 }
 body main .projects #front-slide-four {
-  background-image: url("../img/pr_front_js_banc.PNG");
+  background-image: url("../img/pr_front_js_banc.png");
   background-size: 54%;
   background-position: center;
   background-repeat: no-repeat;
@@ -749,7 +750,7 @@ body main .projects #front-slide-four {
 body main .projects #front-slide-four:hover {
   background-size: 57%;
   filter: grayscale(0%);
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/pr_front_js_banc.PNG");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/pr_front_js_banc.png");
   -webkit-text-fill-color: rgba(200, 255, 105, 0.98);
   font-size: 1.1rem;
   font-weight: bold;

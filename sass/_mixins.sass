@@ -4,7 +4,6 @@
 
 
 @mixin reset
-   //font-family: 'Josefin Sans'
    padding: 0
    margin: 0
    //box-sizing: border-box
@@ -22,30 +21,15 @@
   background-image: linear-gradient(to top, transparent, rgba(219, 206, 218, 0.8))
   box-shadow: 5px 5px 8px 5px rgba(0, 0, 0, 0.7)  
 
-
-
-
-
-
 @mixin first-dark-degrade
   background-color: rgba(0, 2, 9, 0.7)
   background-image: linear-gradient(to top, transparent, rgba(19, 6, 18, 0.8))
   box-shadow: 5px 5px 8px 5px rgba(0, 0, 0, 0.7) 
 
-
-
-
-
-
 @mixin second-dark-degrade
   background-color: rgba(0, 2, 9, 0.7)
   background-image: linear-gradient(to top, transparent, rgba(19, 6, 18, 0.8))
   box-shadow: 5px 5px 8px 5px rgba(0, 0, 0, 0.7)
-
-
-
-
-
 
 @mixin container-project-degrade
   background-color: rgba(08, 12, 99, 0.7)
@@ -57,24 +41,15 @@
   background-image: linear-gradient(to top, transparent, rgba(19, 16, 18, 0.8))
   box-shadow: 5px 5px 8px 5px rgba(0, 0, 0, 0.7)    
 
-
-
 @mixin container-academy-degrade
   background-color: rgba(08, 12, 99, 0.7)
   background-image: linear-gradient(to top, transparent, rgba(19, 16, 18, 0.8))
   box-shadow: 5px 5px 8px 5px rgba(0, 0, 0, 0.7)  
 
-
 @mixin footer-dark-degrade
   background-color: rgba(0, 2, 9, 0.7)
   background-image: linear-gradient(to top, transparent, rgba(19, 6, 18, 0.8))
   box-shadow: 5px 5px 8px 5px rgba(0, 0, 0, 0.7)  
-
-
-
-
-
-
 
 
 
@@ -105,30 +80,14 @@
   box-shadow: 0 4px 20px white
   
 
-
-
 @mixin active-btn
   background-color: variables.$bg-hover
   color: variables.$txt-hover   
 
 
 
-
-
-
-
-
-//@mixin body   
-   //background-color: variables.$body-bg-color
-   //color: variables.$body-text-color
-
-
-
-
 @mixin containner-main
    display: block
-
-
 
 
 @mixin containner-header
@@ -154,16 +113,14 @@
 
 
 @mixin bg-img($img)
-   background-image: url('../img/#{$img}')
-   //background-size: 62%
+   background-image: url('../img/#{$img}')   
    background-size: 54%
    background-position: center
    background-repeat: no-repeat
    filter: grayscale(100%)
    transition: .6s
    -webkit-text-fill-color: variables.$opacity-color
-   &:hover
-      //background-size: 68%
+   &:hover     
       background-size: 57%
       filter: grayscale(0%)
       background-image: linear-gradient(rgba(0,0 ,0 ,0.5 ),rgba(0,0 ,0 ,0.5 )),url('../img/#{$img}')
@@ -175,9 +132,6 @@
 
       &:hover
          background-size: 96%
-
-
-
 
 
 
@@ -195,16 +149,12 @@
 
 
 
-
-
 @mixin container-hability
     width: auto
     height: auto
     text-align: center
     margin-top: 20px
     
-
-
 
 @mixin container-projects
     width: auto
@@ -213,9 +163,6 @@
     margin-top: 20px
     padding: 20px 0
     
-
-
-
 
 
 @mixin container-academy  
@@ -238,9 +185,6 @@
    border-bottom-right-radius: 26px
    border-bottom-left-radius: 26px
    margin-bottom: 20px
-
-
-
 
 
 

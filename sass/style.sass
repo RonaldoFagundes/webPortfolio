@@ -2,7 +2,6 @@
 @use 'mixins'
 @use 'functions'
 
-@charset "utf-8"
 
 *
     @include mixins.reset
@@ -16,7 +15,6 @@ body
         @include mixins.body-dark-degrade
 
         a
-            //color: variables.$header_nav
             text-decoration: none
             transition: .4s
 
@@ -113,10 +111,7 @@ body
                        li
                            margin: 0 1rem
 
-                           a
-                               &:hover
-                                   //color: variables.$header_social_bg
-
+                           
                     
           .to-top
 
@@ -414,7 +409,7 @@ body
                   @include mixins.bg-img('pr_front_js.png')  
 
               #front-slide-four  
-                  @include mixins.bg-img('pr_front_js_banc.PNG') 
+                  @include mixins.bg-img('pr_front_js_banc.png') 
 
             
 
