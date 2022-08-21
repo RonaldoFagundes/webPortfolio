@@ -131,7 +131,7 @@ body main .header-social-media ul li {
   margin: 0 1rem;
 }
 body main .to-top {
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.8);
   width: 40px;
   height: 40px;
   display: none;
@@ -150,7 +150,7 @@ body main .to-top {
 }
 @media screen and (min-width: 300px) and (max-width: 1000px) {
   body main .to-top {
-    margin-left: 82%;
+    margin-left: 85%;
     bottom: 180px;
   }
 }
@@ -548,17 +548,18 @@ body main .projects {
   box-shadow: 5px 5px 8px 5px rgba(0, 0, 0, 0.7);
 }
 body main .projects-btn {
-  width: 44%;
-  height: 140px;
   background-color: rgba(0, 2, 9, 0.7);
   background-image: linear-gradient(to top, transparent, rgba(19, 6, 18, 0.8));
   box-shadow: 5px 5px 8px 5px rgba(0, 0, 0, 0.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 44%;
+  height: 140px;
   margin-left: 28%;
   padding: 10px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
 }
 @media screen and (min-width: 300px) and (max-width: 1000px) {
   body main .projects-btn {
@@ -602,13 +603,13 @@ body main .projects-front-show {
   display: flex;
 }
 body main .projects-slide {
+  background-color: rgba(28, 62, 63, 0.7);
+  background-image: linear-gradient(to top, transparent, rgba(19, 16, 18, 0.8));
+  box-shadow: 5px 5px 8px 5px rgba(0, 0, 0, 0.7);
   width: 300px;
   height: 300px;
   margin-top: 50px;
   padding-top: 30px;
-  background-color: rgba(28, 62, 63, 0.7);
-  background-image: linear-gradient(to top, transparent, rgba(19, 16, 18, 0.8));
-  box-shadow: 5px 5px 8px 5px rgba(0, 0, 0, 0.7);
   border-radius: 50px;
   margin-bottom: 50px;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
@@ -975,12 +976,13 @@ body main .academy-flip {
   background-color: rgba(0, 2, 9, 0.7);
   background-image: linear-gradient(to top, transparent, rgba(19, 6, 18, 0.8));
   box-shadow: 5px 5px 8px 5px rgba(0, 0, 0, 0.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  justify-content: space-between;
   width: auto;
   height: auto;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
 }
 body main .academy-flip-card {
   background-color: rgba(0, 2, 9, 0.7);

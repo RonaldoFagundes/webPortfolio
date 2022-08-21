@@ -9,8 +9,6 @@
 html
   scroll-behavior: smooth
 
-
-
 body
         @include mixins.body-dark-degrade
 
@@ -44,26 +42,20 @@ body
         .bi-globe:hover
          color: variables.$link-globe-color
 
-
         .bi-arrow-up-square-fill
          color: variables.$link-top-color
-
         .bi-arrow-up-square-fill:hover
          color: variables.$link-top-color-hover 
 
-
         main
-          display: block
-          
+          display: block  
 
 
           .header
-               @include mixins.containner-header     
-               
+               @include mixins.containner-header                 
                  
                &-info
                    @include mixins.info-box
-
 
                    &-avatar 
                      width: 140px
@@ -72,30 +64,22 @@ body
 
                    &-name
                      padding: 1.2rem
-                     width: 180px                     
-                    
+                     width: 180px                               
 
                    &-objective
-                     width: 200px
-                    
+                     width: 200px                    
                      
                &-navbar
                    @include mixins.flex-center
                    width: 600px
-                   height: 60px                   
-                   
-                   
+                   height: 60px                            
       
                    ul
-                    @include mixins.flex-center
-                   
-
+                    @include mixins.flex-center      
                    li
                     margin: 0 1rem 1rem 0
                     text-transform: uppercase
-                    font-size: .8rem
-
-                    
+                    font-size: .8rem                    
                     a
                         color: variables.$header_nav
                         &:hover
@@ -107,44 +91,16 @@ body
                    ul
                        @include mixins.flex-center
                        height: 100%
-
                        li
                            margin: 0 1rem
-
                            
                     
           .to-top
-
-            background-color: rgba(0, 0,0 ,0.5 )
-            width: 40px
-            height: 40px
-            display: none
-            align-items: center
-            justify-content: center
-            z-index: 2000
-            position: fixed
-            bottom: 20px 
-            margin-left: 94%
-            cursor: pointer
-            border:3px solid #333
-            border-radius: 50%
-            transition-duration: 0.2s  
-            transition-timing-function: ease-in-out
-            transition-property: background-color,color 
-
-            
-             
-
-            
-              
+            @include mixins.btn-to-top     
 
             @media screen and (min-width: variables.$mq_mobilie) and (max-width: variables.$mq_desktop)
-              margin-left: 82%
-              bottom: 180px
-               
-            
-         
-
+              margin-left: 85%
+              bottom: 180px          
 
           .topEntrance
             animation-duration: 0.5s
@@ -158,8 +114,7 @@ body
                 transform: translate3d(0,100%,0)
               to
                 opacity:1
-                transform: translate3d(0,0,0)      
-                           
+                transform: translate3d(0,0,0)  
   
           .topExit
             animation-duration: 0.25s
@@ -175,24 +130,11 @@ body
                 transform: translate3d(0,100% ,0)
 
               
-                
-              
-                
 
           .about
               @include mixins.container-about
               @include mixins.first-dark-degrade
-
               
-          
-
-
-
-
-
-
-
-
 
           .hability
               @include mixins.container-hability
@@ -207,8 +149,7 @@ body
                   height: 140px
                   margin: 40px 10px
                   flex-direction: column
-                  color: variables.$primary-color
-                  
+                  color: variables.$primary-color                  
                                 
                   @media screen and (min-width: variables.$mq_mobilie) and (max-width: variables.$mq_desktop)
                       width: 23%
@@ -223,9 +164,6 @@ body
 
                     @media screen and (min-width: variables.$mq_mobilie) and (max-width: variables.$mq_desktop)
                     font-size: 1.0rem
-
-
-
 
           #card-1
             @include mixins.bg-img('hb_html.png')         
@@ -264,31 +202,23 @@ body
             @include mixins.bg-img('hb_linux.png')
 
 
-
-
-
-
-
                       
           .projects  
               @include mixins.container-projects
               @include mixins.second-dark-degrade
               
               &-btn
-                  width: 44%
-                  height: 140px
                   @include mixins.first-dark-degrade
-                  margin-left: 28%
-                  padding: 10px
-                  display: flex
+                  @include mixins.flex-center
                   justify-content: space-between
-                  align-items: center
-                  flex-wrap: wrap
+                  width: 44%
+                  height: 140px                  
+                  margin-left: 28%
+                  padding: 10px                  
                   @media screen and (min-width: variables.$mq_mobilie) and (max-width: variables.$mq_desktop)
                     display: block
                     align-items: center
                     height: auto
-
 
                   &-style
                       @include mixins.btn-style
@@ -298,11 +228,7 @@ body
                         cursor: pointer
                       
               .active-btn
-               @include mixins.active-btn
-                  
-                                
-                              
-                     
+               @include mixins.active-btn         
 
               &-front
                   @include mixins.container-project-degrade
@@ -312,15 +238,14 @@ body
                   display: none
                   
                   &-show
-                      display: flex
-                  
+                      display: flex                  
 
               &-slide
+                @include mixins.cards-project-degrade
                 width: 300px      
                 height: 300px
                 margin-top: 50px
                 padding-top: 30px
-                @include mixins.cards-project-degrade
                 border-radius: 50px
                 margin-bottom: 50px
                 box-shadow: 0 4px 20px rgba(#000,0.2 )
@@ -329,20 +254,13 @@ body
                    height: 340px
 
 
-                
-                 
-
-
-
                 &-links
                   width: 100%
                   height: 40px
                   display: block
                   margin-top: 130px
-                  //padding: 1.1rem
-                  
+                  //padding: 1.1rem                 
                  
-
                 &-desc
                   background-color: variables.$opacity-color
                   height: 70px
@@ -350,35 +268,18 @@ body
                   display: flex
                   align-items: center
                   justify-content: center
-                  padding: 0.6rem
-                  
-                  
-                  
-                  
-                  //margin-top: 140px
+                  padding: 0.6rem  
+                 
                   @media screen and (min-width: variables.$mq_mobilie) and (max-width: variables.$mq_desktop)
                     height: 130px
-                    
-                    
-                    
-                    
-                    
-                      
-
-                      
-
-
+               
                   &:hover
                    background-color: variables.$dark-color
                    
                 ul
                   display: block
                   float: left
-                  margin: 5px 20px 
-                  //justify-content: space-between
-                  //margin-top: 6px
-                  //margin: 40px 2px
-                  // justify-content: left
+                  margin: 5px 20px                   
               
                   @media screen and (min-width: variables.$mq_mobilie) and (max-width: variables.$mq_desktop)
                      display: flex
@@ -387,17 +288,10 @@ body
                   li
                     @media screen and (min-width: variables.$mq_mobilie) and (max-width: variables.$mq_desktop)
                       margin: 10px 0px 0px 20px 
-                     
-                     
-
-                   
-
-
+             
                 @media screen and (min-width: variables.$mq_mobilie) and (max-width: variables.$mq_desktop)
-                  width: 180px
-                   
-                
-                   
+                  width: 180px                   
+                  
                 
               #front-slide-one 
                   @include mixins.bg-img('pr_website.png')
@@ -411,15 +305,7 @@ body
               #front-slide-four  
                   @include mixins.bg-img('pr_front_js_banc.png') 
 
-            
-
-                   
-
-
-
-
-
-
+         
 
               &-back              
                   @include mixins.container-academy-degrade
@@ -437,10 +323,7 @@ body
               #back-slide-two  
                @include mixins.bg-img('pr_fullstack_java.png') 
     
-             
-
-
-
+      
 
               &-mobilie    
                  @include mixins.cards-project-degrade
@@ -468,10 +351,6 @@ body
                 @include mixins.bg-img('pr_app_flutter_memory.png') 
 
               
-                 
-          
-
-          
           
           
           .academy
@@ -479,18 +358,16 @@ body
             @include mixins.second-dark-degrade
             &-flip
               @include mixins.second-dark-degrade
+              @include mixins.flex-center
+              justify-content: space-between
               width: auto
               height: auto
-              display: flex
-              justify-content: space-between
-              align-items: center
-              flex-wrap: wrap
+              
               &-card
                 @include mixins.second-dark-degrade
                 width: 340px
                 height: 340px
-                perspective: 2000px
-                //margin-right: 40px
+                perspective: 2000px               
                 display: flex
                 align-items: center
                 justify-content: center
@@ -500,15 +377,11 @@ body
                   background-color: blue
                   width: 86%
                   height: 86%
-
                   box-shadow: 0 4px 20px rgba(#000,0.2 )
                   box-shadow: 0 4px 20px white
                   border-radius: 28px
-
                   transition: all 550ms variables.$c-bezier
-
                   transform-style: preserve-3d
-
                   flex-direction: column
                   color: white
                   
@@ -547,12 +420,6 @@ body
 
                    
 
-
-
-              
-    
-  
-    
     
 
         .fotter

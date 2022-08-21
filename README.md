@@ -28,7 +28,9 @@ webPage with personal introducion
 
  &nbsp;  
    
- <div style="display: flex; justify-content: space-between">
+  <!-- <div style="width:auto; display:flex; justify-content:space-between;">  -->
+
+ <div width="auto" display="flex"  justify-content="space-between">
   
  
    <img src="https://user-images.githubusercontent.com/79234840/185764003-bac7012a-6d39-4026-9cd4-d6490eae6485.jpg" width="140px" height="200px"/>
@@ -43,7 +45,7 @@ webPage with personal introducion
    <img src="https://user-images.githubusercontent.com/79234840/185764008-b1204985-aaac-4eac-8465-ec4b4ddf8d04.jpg" width="140px" height="200px"/>
    
     
-  <img src="https://user-images.githubusercontent.com/79234840/185764009-dd319ee2-4653-41c1-8512-02839bba20c2.jpg" width="140px" height="200px"/>
+   <img src="https://user-images.githubusercontent.com/79234840/185764009-dd319ee2-4653-41c1-8512-02839bba20c2.jpg" width="140px" height="200px"/>
   
  </div>
 
