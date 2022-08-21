@@ -1,4 +1,5 @@
 @import url(http://fonts.googleapis.com/css?family=Roboto+Slab|Open+Sans:400italic,700italic,400,700);
+@import url("https://fonts.googleapis.com/css2?family=Kanit:ital,wght@1,300&display=swap");
 * {
   padding: 0;
   margin: 0;
@@ -150,7 +151,7 @@ body main .to-top {
 }
 @media screen and (min-width: 300px) and (max-width: 1000px) {
   body main .to-top {
-    margin-left: 85%;
+    margin-left: 87%;
     bottom: 180px;
   }
 }
@@ -191,7 +192,7 @@ body main .about {
   margin-top: 20px;
   flex-wrap: wrap;
   color: rgba(61, 219, 153, 0.8431372549);
-  font-family: "Lobster", cursive;
+  font-family: "Kanit", sans-serif;
   font-size: 1.4rem;
   background-color: rgba(0, 2, 9, 0.7);
   background-image: linear-gradient(to top, transparent, rgba(19, 6, 18, 0.8));
