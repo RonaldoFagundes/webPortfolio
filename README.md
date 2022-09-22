@@ -21,19 +21,17 @@ webPage with personal introducion
  - SASS
  - JS
  
-   &nbsp;
+&nbsp;
     
-## Link para o site:
-# [site](https://ronaldofagundes.github.io/webPortfolio/)
 
- &nbsp;  
-   
- &nbsp;
-  ## youtube :
-  &nbsp;
-  # [assistir](https://www.youtube.com/watch?v=IztZBrKVT_A)     
+# [Link para o site:](https://ronaldofagundes.github.io/webPortfolio/)
 
-  &nbsp;
+&nbsp;   
+  
+  
+# [youtube :](https://www.youtube.com/watch?v=IztZBrKVT_A)     
+
+&nbsp;
 
 
 
