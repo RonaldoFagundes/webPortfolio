@@ -28,6 +28,15 @@ webPage with personal introducion
 
  &nbsp;  
    
+ &nbsp;
+  ## youtube :
+  &nbsp;
+  # [assistir](https://www.youtube.com/watch?v=IztZBrKVT_A)     
+
+  &nbsp;
+
+
+
   <!-- <div style="width:auto; display:flex; justify-content:space-between;">  -->
 
  <div width="auto" display="flex"  justify-content="space-between">
