@@ -101,4 +101,7 @@
 
 
 
+   function getPhone(){
+      alert(" meu telefone : (21) 99028-8543 ")
+    }
     
