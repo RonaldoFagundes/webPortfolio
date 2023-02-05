@@ -828,7 +828,7 @@ body main .projects #back-slide-two:hover {
   }
 }
 body main .projects #back-slide-three {
-  background-image: url("../img/pr_fullstack_phpll.png");
+  background-image: url("../img/pr_fullstack_php_mysql.png");
   background-size: 54%;
   background-position: center;
   background-repeat: no-repeat;
@@ -839,7 +839,7 @@ body main .projects #back-slide-three {
 body main .projects #back-slide-three:hover {
   background-size: 57%;
   filter: grayscale(0%);
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/pr_fullstack_phpll.png");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/pr_fullstack_php_mysql.png");
   -webkit-text-fill-color: rgba(200, 255, 105, 0.98);
   font-size: 1.1rem;
   font-weight: bold;
@@ -1014,7 +1014,7 @@ body main .projects #mobilie-slide-five:hover {
   }
 }
 body main .projects #mobilie-slide-six {
-  background-image: url("../img/pr_app_react_bancll.png");
+  background-image: url("../img/pr_app_react_native_banc.png");
   background-size: 54%;
   background-position: center;
   background-repeat: no-repeat;
@@ -1025,7 +1025,7 @@ body main .projects #mobilie-slide-six {
 body main .projects #mobilie-slide-six:hover {
   background-size: 57%;
   filter: grayscale(0%);
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/pr_app_react_bancll.png");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/pr_app_react_native_banc.png");
   -webkit-text-fill-color: rgba(200, 255, 105, 0.98);
   font-size: 1.1rem;
   font-weight: bold;
