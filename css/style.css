@@ -853,7 +853,7 @@ body main .projects #back-slide-three:hover {
   }
 }
 body main .projects #back-slide-four {
-  background-image: url("../img/pr_fullstack_java_angular.png");
+  background-image: url("../img/pr_fullstack_java_angular.PNG");
   background-size: 54%;
   background-position: center;
   background-repeat: no-repeat;
@@ -864,7 +864,7 @@ body main .projects #back-slide-four {
 body main .projects #back-slide-four:hover {
   background-size: 57%;
   filter: grayscale(0%);
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/pr_fullstack_java_angular.png");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/pr_fullstack_java_angular.PNG");
   -webkit-text-fill-color: rgba(200, 255, 105, 0.98);
   font-size: 1.1rem;
   font-weight: bold;
