@@ -1,0 +1,240 @@
+@use 'variables'
+
+
+
+
+@mixin reset
+   padding: 0
+   margin: 0
+   //box-sizing: border-box
+
+
+
+
+@mixin body-dark-degrade
+  background-color: rgba(0, 2, 9, 0.7)
+  background-image: linear-gradient(to top, transparent, rgba(19, 6, 18, 0.8))
+  box-shadow: 5px 5px 8px 5px rgba(0, 0, 0, 0.7)
+
+@mixin body-light-degrade
+  background-color: rgba(100, 200, 9, 0.7)
+  background-image: linear-gradient(to top, transparent, rgba(219, 206, 218, 0.8))
+  box-shadow: 5px 5px 8px 5px rgba(0, 0, 0, 0.7)  
+
+@mixin first-dark-degrade
+  background-color: rgba(0, 2, 9, 0.7)
+  background-image: linear-gradient(to top, transparent, rgba(19, 6, 18, 0.8))
+  box-shadow: 5px 5px 8px 5px rgba(0, 0, 0, 0.7) 
+
+@mixin second-dark-degrade
+  background-color: rgba(0, 2, 9, 0.7)
+  background-image: linear-gradient(to top, transparent, rgba(19, 6, 18, 0.8))
+  box-shadow: 5px 5px 8px 5px rgba(0, 0, 0, 0.7)
+
+@mixin container-project-degrade
+  background-color: rgba(08, 12, 99, 0.7)
+  background-image: linear-gradient(to top, transparent, rgba(19, 16, 18, 0.8))
+  box-shadow: 5px 5px 8px 5px rgba(0, 0, 0, 0.7)  
+
+@mixin cards-project-degrade
+  background-color: rgba(28, 62, 63, 0.7)
+  background-image: linear-gradient(to top, transparent, rgba(19, 16, 18, 0.8))
+  box-shadow: 5px 5px 8px 5px rgba(0, 0, 0, 0.7)    
+
+@mixin container-academy-degrade
+  background-color: rgba(08, 12, 99, 0.7)
+  background-image: linear-gradient(to top, transparent, rgba(19, 16, 18, 0.8))
+  box-shadow: 5px 5px 8px 5px rgba(0, 0, 0, 0.7)  
+
+@mixin footer-dark-degrade
+  background-color: rgba(0, 2, 9, 0.7)
+  background-image: linear-gradient(to top, transparent, rgba(19, 6, 18, 0.8))
+  box-shadow: 5px 5px 8px 5px rgba(0, 0, 0, 0.7)  
+
+
+
+
+
+
+
+
+@mixin flex-center
+   display: flex
+   align-items: center
+   justify-content: center
+   flex-wrap: wrap
+
+
+
+@mixin btn-style
+  width: auto
+  padding: .4rem .8rem
+  border: 2px solid variables.$btn_default_color
+  border-radius: 20px
+  color: black
+  font-weight: 200
+  text-transform: uppercase
+  letter-spacing: 1px
+  margin-bottom: 0.8rem          
+  box-shadow: 0 4px 20px rgba(#000,0.2 )
+  box-shadow: 0 4px 20px white
+  
+
+@mixin active-btn
+  background-color: variables.$bg-hover
+  color: variables.$txt-hover   
+
+
+
+@mixin containner-main
+   display: block
+
+
+@mixin containner-header
+   width: auto
+   height: 340px
+   display: flex
+   justify-content: space-around
+   align-items: center
+   flex-wrap: wrap
+   @media screen and (min-width: variables.$mq_mobilie) and (max-width: variables.$mq_desktop)  
+      height: 400px
+
+
+
+@mixin info-box
+   padding: 1.4rem
+   width: 34%
+   display: block
+   color:  variables.$personal-info-color
+   font-family: variables.$personal-info-font
+   font-size: variables.$personal-info-font-size
+
+
+
+@mixin bg-img($img)
+   background-image: url('../img/#{$img}')   
+   background-size: 54%
+   background-position: center
+   background-repeat: no-repeat
+   filter: grayscale(100%)
+   transition: .6s
+   -webkit-text-fill-color: variables.$opacity-color
+   &:hover     
+      background-size: 57%
+      filter: grayscale(0%)
+      background-image: linear-gradient(rgba(0,0 ,0 ,0.5 ),rgba(0,0 ,0 ,0.5 )),url('../img/#{$img}')
+      -webkit-text-fill-color: variables.$light-color
+      font-size: 1.1rem
+      font-weight: bold
+   @media screen and (min-width: variables.$mq_mobilie) and (max-width: variables.$mq_desktop)
+      background-size: 89%
+
+      &:hover
+         background-size: 96%
+
+
+
+
+
+@mixin btn-to-top
+  background-color: variables.$dark-color
+  width: 40px
+  height: 40px
+  display: none
+  align-items: center
+  justify-content: center
+  z-index: 2000
+  position: fixed
+  bottom: 20px 
+  margin-left: 94%
+  cursor: pointer
+  border:3px solid #333
+  border-radius: 50%
+  transition-duration: 0.2s  
+  transition-timing-function: ease-in-out
+  transition-property: background-color,color
+
+
+
+
+
+
+@mixin container-about
+   width: auto
+   height: auto
+   padding: 2.8rem
+   text-align: center
+   margin-top: 20px
+   flex-wrap: wrap
+   color: variables.$text_default_color
+   font-family: variables.$text_default_font
+   font-size:  variables.$text_default_size
+
+
+
+@mixin container-hability
+    width: auto
+    height: auto
+    text-align: center
+    margin-top: 20px
+    
+
+@mixin container-projects
+    width: auto
+    height: auto
+    text-align: center
+    margin-top: 20px
+    padding: 20px 0
+    
+
+
+@mixin container-academy  
+   width: auto
+   height: auto
+   padding: 10px 30px
+   margin-top: 20px
+   text-align: center
+
+
+
+@mixin bg-img-academy($img)
+   background-image: url('../img/#{$img}')
+   background-repeat: no-repeat
+   background-size: 100%
+   width: 100%
+   height: 100px    
+   border-top-right-radius: 20px
+   border-top-left-radius: 20px
+   border-bottom-right-radius: 26px
+   border-bottom-left-radius: 26px
+   margin-bottom: 20px
+
+
+
+
+@mixin container-footer
+   width: auto
+   height: 160px
+   margin-top: 20px
+   text-align: center
+   padding-bottom: 2rem
+   
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
